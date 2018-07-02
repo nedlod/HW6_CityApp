@@ -36,8 +36,8 @@ public class FirstFragment extends Fragment implements CityAdapter.CityViewHolde
 
         ArrayList <City> cities = FillCityArrayList.getCities();
 
-        recyclerView =(RecyclerView) rootView.findViewById(R.id.my_recycler_view);
-        cardView = (CardView)rootView.findViewById( R.id.cv );
+        recyclerView = (RecyclerView) rootView.findViewById( R.id.my_recycler_view );
+        cardView = (CardView) rootView.findViewById( R.id.cv );
         recyclerView.setLayoutManager( new LinearLayoutManager( getActivity() ) );
         cityAdapter = new CityAdapter( cities, this );
         recyclerView.setAdapter( cityAdapter );
@@ -46,15 +46,4 @@ public class FirstFragment extends Fragment implements CityAdapter.CityViewHolde
     }
 
 
-    @Override
-    public void onItemClick(String info) {
-        Intent intent = new Intent();
-        //intent.putExtra("CAR_INFO", info);
-        startActivity( intent );
-
-    }
-
-    public void metod() {
-
-    }
 }

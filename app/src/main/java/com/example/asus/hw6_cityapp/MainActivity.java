@@ -78,10 +78,4 @@ public class MainActivity extends AppCompatActivity implements CityAdapter.CityV
 
 
 
-    @Override
-    public void onItemClick(String info) {
-        Intent intent = new Intent(this, FirstFragment.class);
-        //intent.putExtra("CAR_INFO", info);
-        startActivity(intent);
-    }
 }

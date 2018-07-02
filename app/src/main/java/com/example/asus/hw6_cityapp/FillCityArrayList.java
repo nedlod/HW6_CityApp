@@ -83,10 +83,10 @@ public class FillCityArrayList {
     private static void fillCityList(){
         for (int i = 0; i < 10; i++) {
             String citiesURL = cityURL.get(i);
-            String citesName = cityName.get(i);
+            String citiesName = cityName.get(i);
             String citiesInfo = cityInfo.get(i);
 
-            city = new City(citiesURL, citesName,citiesInfo);
+            city = new City(citiesURL, citiesName,citiesInfo,false);
             cities.add(city);
 
 
