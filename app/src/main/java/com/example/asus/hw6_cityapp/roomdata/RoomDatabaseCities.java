@@ -5,10 +5,12 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
-@Database(entities = {Cities.class}, version = 1, exportSchema = false)
+import com.example.asus.hw6_cityapp.City;
+
+@Database(entities = {City.class}, version = 1, exportSchema = false)
 public abstract class RoomDatabaseCities extends RoomDatabase {
 
-    public abstract CitiesDao citiesDao();
+    public abstract CityDao citiesDao();
 
 
     private static RoomDatabaseCities INSTANCE;

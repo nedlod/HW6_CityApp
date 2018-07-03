@@ -9,11 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.asus.hw6_cityapp.roomdata.Cities;
-import com.example.asus.hw6_cityapp.roomdata.CitiesViewModel;
+import com.example.asus.hw6_cityapp.roomdata.CityViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,9 +19,9 @@ import java.util.List;
 public class CityAdapter extends RecyclerView.Adapter<CityAdapter.CityViewHolder> {
 
 
+
     private ArrayList <City> citiesList;
     private CityViewHolder.OnItemClickListener listener;
-    private CitiesViewModel citiesViewModel;
 
 
     public CityAdapter(ArrayList <City> citiesList, CityViewHolder.OnItemClickListener listener) {
@@ -31,8 +29,6 @@ public class CityAdapter extends RecyclerView.Adapter<CityAdapter.CityViewHolder
         this.listener = listener;
     }
 
-    public CityAdapter(CitiesViewModel viewModel) {
-    }
 
     @NonNull
     @Override
@@ -101,5 +97,4 @@ public class CityAdapter extends RecyclerView.Adapter<CityAdapter.CityViewHolder
         }
     }
 }
-
 

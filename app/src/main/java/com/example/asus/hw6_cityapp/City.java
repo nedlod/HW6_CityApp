@@ -1,8 +1,23 @@
 package com.example.asus.hw6_cityapp;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
 import android.widget.Button;
 
+
+@Entity(tableName = "all_cities")
 public class City {
+
+    @PrimaryKey(autoGenerate = true)
+            private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     String pictureUrl;
     String cityName;
